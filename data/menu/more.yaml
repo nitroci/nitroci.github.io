@@ -1,6 +1,6 @@
 ---
 more:
-  - name: NitroCI Releases
+  - name: Releases
     ref: "https://github.com/nitroci/nitroci-cli/releases"
     external: true
     icon: "gdoc_download"
