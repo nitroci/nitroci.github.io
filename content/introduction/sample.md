@@ -1,5 +1,5 @@
 ---
-title: Quickstart Guide
+title: Sample Page
 weight: 4
 ---
 
