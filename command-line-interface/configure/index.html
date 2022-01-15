@@ -5,18 +5,18 @@
 <meta name=color-scheme content="light dark">
 <meta name=description content="Nitro CI">
 <title>
-Workspace Configuration |
+Configure |
 Nitro CI
 </title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
-<meta property="og:title" content="Workspace Configuration">
+<meta property="og:title" content="Configure">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://nitroci.github.io/command-line-interface/configuration/workspace-configuration/">
+<meta property="og:url" content="https://nitroci.github.io/command-line-interface/configure/">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Workspace Configuration">
+<meta name=twitter:title content="Configure">
 <meta name=twitter:description content>
 <script src=/js/main.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -173,9 +173,51 @@ Nitro CI
 </label>
 <ul class=gdoc-nav__list>
 <li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-f5359bdb checked>
+<label for=navtree-f5359bdb class="flex justify-between">
+<span class=flex>Configure</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-c26a6ddc>
+<label for=navtree-c26a6ddc class="flex justify-between">
+<span class=flex>Global Configuration</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Configuration Introduction</span>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-7775d2aa>
 <label for=navtree-7775d2aa class="flex justify-between">
 <span class=flex>Workspace</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Overview</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Configuration</span>
+</label>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-2c30441c>
+<label for=navtree-2c30441c class="flex justify-between">
+<span class=flex>Environments</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
@@ -219,26 +261,6 @@ Nitro CI
 </ul>
 </li>
 <li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-2c30441c>
-<label for=navtree-2c30441c class="flex justify-between">
-<span class=flex>Environments</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>Overview</span>
-</label>
-</li>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>Configuration</span>
-</label>
-</li>
-</ul>
-</li>
-<li>
 <input type=checkbox class=gdoc-nav__toggle id=navtree-1ae86fe2>
 <label for=navtree-1ae86fe2 class="flex justify-between">
 <span class=flex>Pipelines</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
@@ -259,50 +281,22 @@ Nitro CI
 </ul>
 </li>
 <li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-43879431 checked>
-<label for=navtree-43879431 class="flex justify-between">
-<span class=flex>Configuration</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-19acff0a>
-<label for=navtree-19acff0a class="flex justify-between">
-<span class=flex>Global Configuration</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-a1600942>
+<label for=navtree-a1600942 class="flex justify-between">
+<span class=flex>Plugins</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex>Configuration Introduction</span>
+<span class=flex>Bitbucket</span>
 </label>
 </li>
 <li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex>Configuration References</span>
+<span class=flex>JFrog</span>
 </label>
-</li>
-</ul>
-</li>
-<li>
-<input type=checkbox class=gdoc-nav__toggle id=navtree-9a7e1a80 checked>
-<label for=navtree-9a7e1a80 class="flex justify-between">
-<span class=flex>Workspace Configuration</span><svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"/></svg><svg class="icon gdoc_keyborad_arrow_down"><use xlink:href="#gdoc_keyborad_arrow_down"/></svg>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>Configuration Introduction</span>
-</label>
-</li>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>Configuration References</span>
-</label>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -377,12 +371,12 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Nitro CI</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/command-line-interface/ href=/command-line-interface/><span itemprop=name>Command-line Interface</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/command-line-interface/configuration/ href=/command-line-interface/configuration/><span itemprop=name>Configuration</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Workspace Configuration</span><meta itemprop=position content="4"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Nitro CI</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/command-line-interface/ href=/command-line-interface/><span itemprop=name>Command-line Interface</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Configure</span><meta itemprop=position content="3"></li>
 </ol>
 </div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Workspace Configuration</h1>
+<h1>Configure</h1>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
