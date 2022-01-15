@@ -3,7 +3,7 @@ title: Nitro CI
 geekdocFlatSection: false
 ---
 
-Boost your software Development, Continuous Integration and Deployment with `Nitro CI`.
+Boost your software Development, Continuous Integration and Deployment with Nitro CI.
 
 Nitro CI aims to create workspaces which implement commands that can be executed in the local development environment as well as in CI and CD environments.
 
