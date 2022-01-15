@@ -1,5 +1,5 @@
 ---
-title: Configuration
-weight: 7
+title: Environments
+weight: 3
 geekdocCollapseSection: true
 ---

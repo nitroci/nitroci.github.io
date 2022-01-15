@@ -1,5 +1,5 @@
 ---
-title: References
-weight: 9
+title: Pipelines
+weight: 4
 geekdocCollapseSection: true
 ---

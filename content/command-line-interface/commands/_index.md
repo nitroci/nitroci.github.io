@@ -1,5 +1,5 @@
 ---
-title: Pipelines
-weight: 6
+title: Commands
+weight: 2
 geekdocCollapseSection: true
 ---

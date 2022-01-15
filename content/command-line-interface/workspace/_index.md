@@ -1,5 +1,5 @@
 ---
-title: Commands
-weight: 4
+title: Workspace
+weight: 1
 geekdocCollapseSection: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Use Cases
-weight: 6
+title: Configuration
+weight: 5
 geekdocCollapseSection: true
 ---
