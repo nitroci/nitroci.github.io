@@ -1,5 +1,5 @@
 ---
-title: Configuration
-weight: 5
+title: Plugins
+weight: 6
 geekdocCollapseSection: true
 ---

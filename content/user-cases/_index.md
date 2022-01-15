@@ -1,5 +1,5 @@
 ---
 title: Use Cases
-weight: 6
+weight: 7
 geekdocCollapseSection: true
 ---

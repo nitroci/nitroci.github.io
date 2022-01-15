@@ -1,5 +1,5 @@
 ---
 title: Workspace
-weight: 1
+weight: 2
 geekdocCollapseSection: true
 ---

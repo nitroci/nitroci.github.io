@@ -1,5 +1,5 @@
 ---
-title: References
-weight: 7
+title: Configure
+weight: 1
 geekdocCollapseSection: true
 ---
