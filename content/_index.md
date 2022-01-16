@@ -12,7 +12,7 @@ For instance a developer using K8S locally (K3d, K3s, Kind, MicroK8s, and MiniKu
 
 Just to be clear no more README files to document commands and deployment procedures to be executed by either the developer or the release manager.
 
-Workspace can be composed in a hierarchical way and they are not tied to a single git repository hence a workspace can be composed by multiple git repositories and there is no limit to have just one workspace for each git repository.
+Workspaces can be composed in a hierarchical way and they are not tied to a single git repository hence a workspace can be composed by multiple git repositories and there is no limit to have just one workspace for each git repository.
 
 This is quite handy in contexts where the developer has to draft the structure of the project and it is not clear how to split it into one or more git repositories, a pratical use case can be either microservices/serverless developement or refactoring which is aimed to extract common libraries.
 
