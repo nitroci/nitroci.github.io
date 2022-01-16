@@ -14,7 +14,7 @@ Just to be clear no more README files to document commands and deployment proced
 
 Workspace can be composed in a hierarchical way and they are not tied to a single git repository hence a workspace can be composed by multiple git repositories and there is no limit to have just one workspace for each git repository.
 
-This is quite handy in contexts where the developer has to draft the structure of the project and it is not clear how to split it into git repository, a few use cases can be either microservices/serverless developement or refactoring which is aimed to extract common libraries.
+This is quite handy in contexts where the developer has to draft the structure of the project and it is not clear how to split it into one or more git repositories, a pratical use case can be either microservices/serverless developement or refactoring which is aimed to extract common libraries.
 
 A workspace can be used with any type of project and it is not tied to a particolar programming language. This approach plays quite well and shines with Cloud Native, Microservices and Serverless applications as they require complex automation.
 
