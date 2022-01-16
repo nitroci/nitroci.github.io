@@ -5,7 +5,7 @@ weight: 2
 
 There are several configurations that can be applied to override default behaviours and values of the command-line interface.
 
-In the event of a conflict then the environment variables configuration ovverride Global Config.
+In the event of a conflict then the environment variable configuration ovverrides the Global Config.
 
 {{< toc >}}
 
