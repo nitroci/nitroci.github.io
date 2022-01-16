@@ -5,11 +5,11 @@ weight: 2
 
 There are several configurations that can be applied to override default behaviours and values of the command-line interface.
 
-In the event of a conflict then the environment variables configuration ovverride Global Configuration.
+In the event of a conflict then the environment variables configuration ovverride Global Config.
 
 {{< toc >}}
 
-## Global Configuration
+## Global Config
 
 {{< tabs "site-config" >}}
 {{< tab "TOML" >}}
@@ -46,5 +46,5 @@ Below the comprehensive list of the environment variables:
 
 | VARIABLE NAME        | DEFAULT                 | DESCRIPTION                      |
 |----------------------|-------------------------|----------------------------------|
-| NITROCI_CONFIG       | $HOME/.nitro/config.ini | Global configuration path        |
-| NITROCI_PLUGIN_PATH   | $HOME/.nitro/plugins    | Path where plugins are stored    |
+| NITROCI_CONFIG       | $HOME/.nitro/config.ini | Global config path               |
+| NITROCI_PLUGIN_PATH   | $HOME/.nitro/plugins   | Path where plugins are stored    |
