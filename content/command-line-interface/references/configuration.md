@@ -7,9 +7,12 @@ There are several configurations that can be applied to override default behavio
 
 In the event of a conflict then the environment variable configuration ovverrides the Global Config.
 
+
 {{< toc >}}
 
 ## Global Config
+
+A global configuration file is used to configure the cli at operating system level.
 
 {{< tabs "site-config" >}}
 {{< tab "TOML" >}}
