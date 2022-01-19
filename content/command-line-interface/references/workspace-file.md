@@ -20,17 +20,23 @@ A workspaces can be hierarchically composed with its parent workspaces files.
 ```plain
 level-0/
 ├── .nitroci
-|    └── workspace.yml (at this level there is no composition)
+|    └── workspace.yml
 └── level-1
     ├── .nitroci
     |   └── workspace.yml
     ├── README.md
-    ├── worksplace.yml (this workspace file is composed with `level 0/workspace.yml`)
+    ├── worksplace.yml
     └── level-2
         ├── .nitroci
-        |   └── workspace.yml (this workspace file is composed with `level 0/workspace.yml` + `level 1/workspace.yml`)
+        |   └── workspace.yml
         └── README.md
 ```
+
+Considering the sample above we have would get the following:
+
+- `level-0/workspace.yml`:  at this level there is no composition
+- `level-0/level-1/workspace.yml`:  this file is composed with level-0/workspace.yml
+- `level-0/level-1/level-2/workspace.yml`:  this file is composed with level-0/workspace.yml and level-1/workspace.yml
 
 In the event of a configuration conflitct the value on the bottom workspace overrides the the top one.
 
@@ -52,21 +58,23 @@ workspace:
   id: 40b13d1a1c77457789daa0be89c33335
   name: my-project
   settings:
+    encryption:
+      key: {{ upper .ContextEnvironment }}_ENCRYPTION_SECRET
+    environments:
+      variables:
+        name:  PIPE_{{ upper .Context.Environment.Name }}
     pipelines:
-      platform: bitbucket
       bitbucket:
         workspace: my-company
         slug: my-project
-      suffix: PIPE_%s
-    packages:
-      platform: jfrog
-    encryption:
-      secret_key: {{ .ContextEnvironment }}_ENCRYPTION_SECRET
   plugins:
     - name: bitbucket
       version: 0.2.4
     - name: jfrog
       version: 0.3.6
+  values:
+    - PROJECT_NAME:
+        value: my-project
 environments:
   - name: dev
     encryption:
@@ -79,7 +87,7 @@ commands:
     description: Provision the environment
     steps:
       - scripts:
-          - pyenv virtualenv 3.9.6 my-project--3.9.6 - pip install --upgrade pip
+          - pyenv virtualenv 3.9.6 {{ .PROJECT_NAME }}-3.9.6 && pip install --upgrade pip
   - name: install
     description: Provision the environment
     steps:
@@ -88,5 +96,5 @@ commands:
   - name: destroy
     description: Destroy the environment
     steps:
-      - script: pyenv uninstall -f 3.9.6 my-project--3.9.6
+      - script: pyenv uninstall -f {{ .PROJECT_NAME }}-3.9.6
 ```

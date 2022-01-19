@@ -50,4 +50,4 @@ Below the comprehensive list of the environment variables:
 | VARIABLE NAME        | DEFAULT                 | DESCRIPTION                      |
 |----------------------|-------------------------|----------------------------------|
 | NITROCI_CONFIG       | $HOME/.nitro/config.ini | Global config path               |
-| NITROCI_PLUGIN_PATH  | $HOME/.nitro/plugins    | Path where plugins are stored    |
+| NITROCI_PLUGINS_PATH | $HOME/.nitro/plugins    | Path where plugins are stored    |
