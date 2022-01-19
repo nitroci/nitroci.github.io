@@ -42,11 +42,11 @@ In the event of a configuration conflitct the value on the bottom workspace over
 
 Here a comprehensive list of the full runtime data objects.
 
-| KEY                     | SAMPLE VALUE                       | DESCRIPTION                                                |
-|-------------------------|------------------------------------|------------------------------------------------------------|
-| ContextEnvironment      | local                              |  Current environment                                       |
-| ContextWorkspaceHome    | ~/level-0/level-1/level-2/.nitroci |  Current context workspace path.                           |
-| WorkspaceHome           | ~/level-0/level-1/.nitroci         |  This refer to the current workspace file path             |
+| KEY                      | SAMPLE VALUE                       | DESCRIPTION                                                |
+|--------------------------|------------------------------------|------------------------------------------------------------|
+| Environment              | local                              |  Current environment                                       |
+| Workspace.Home           | ~/level-0/level-1/.nitroci         |  This refer to the current workspace file path             |
+| Virtual.Workspace.Home   | ~/level-0/level-1/level-2/.nitroci |  Current context workspace path.                           |
 
 ## Workspace sample file
 
@@ -59,7 +59,7 @@ workspace:
   name: my-project
   settings:
     encryption:
-      key: {{ upper .ContextEnvironment }}_ENCRYPTION_SECRET
+      key: {{ upper .Environment }}_ENCRYPTION_SECRET
     environments:
       variables:
         name:  PIPE_{{ upper .Context.Environment.Name }}
@@ -81,7 +81,7 @@ environments:
       paths:
         - .vscode
         - .postman/dev
-        - {{ .WorkspaceHome }}/.nitroci/environments/dev
+        - {{ .Workspace.Home }}/.nitroci/environments/dev
 commands:
   - name: provision
     description: Provision the environment
