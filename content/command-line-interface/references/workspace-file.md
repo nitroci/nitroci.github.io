@@ -44,9 +44,9 @@ Here a comprehensive list of the full runtime data objects.
 
 | KEY                      | SAMPLE VALUE                       | DESCRIPTION                                                |
 |--------------------------|------------------------------------|------------------------------------------------------------|
-| Environment              | local                              |  Current environment                                       |
-| Workspace.Home           | ~/level-0/level-1/.nitroci         |  This refer to the current workspace file path             |
-| Virtual.Workspace.Home   | ~/level-0/level-1/level-2/.nitroci |  Current context workspace path.                           |
+| Environment              | local                              | Current environment                                        |
+| Workspace.Home           | ~/level-0/level-1/.nitroci         | Physical workspace path                                    |
+| Virtual.Workspace.Home   | ~/level-0/level-1/level-2/.nitroci | Virtual workspace path                                     |
 
 ## Workspace sample file
 
