@@ -20,7 +20,7 @@ A global configuration file is used to configure the cli at operating system lev
 ```Toml
 [nitroci]
 # Path where plugins are stored
-pluginPath = "$HOME/.nitro/plugins"
+pluginsHome = "$HOME/.nitro/plugins"
 ```
 
 {{< /tab >}}
@@ -30,7 +30,7 @@ pluginPath = "$HOME/.nitro/plugins"
 ---
 nitroci:
     # Path where plugins are stored
-    pluginPath: "$HOME/.nitro/plugins"
+    pluginsHome: "$HOME/.nitro/plugins"
 ```
 
 {{< /tab >}}
