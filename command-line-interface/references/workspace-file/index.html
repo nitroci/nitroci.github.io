@@ -462,19 +462,19 @@ Runtime data objects
 </thead>
 <tbody>
 <tr>
-<td>ContextEnvironment</td>
+<td>Environment</td>
 <td>local</td>
 <td>Current environment</td>
 </tr>
 <tr>
-<td>ContextWorkspaceHome</td>
-<td>~/level-0/level-1/level-2/.nitroci</td>
-<td>Current context workspace path.</td>
-</tr>
-<tr>
-<td>WorkspaceHome</td>
+<td>Workspace.Home</td>
 <td>~/level-0/level-1/.nitroci</td>
 <td>This refer to the current workspace file path</td>
+</tr>
+<tr>
+<td>Virtual.Workspace.Home</td>
+<td>~/level-0/level-1/level-2/.nitroci</td>
+<td>Current context workspace path.</td>
 </tr>
 </tbody>
 </table> </div>
@@ -492,7 +492,7 @@ Workspace sample file
 </span><span class=w>  </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>my-project</span><span class=w>
 </span><span class=w>  </span><span class=nt>settings</span><span class=p>:</span><span class=w>
 </span><span class=w>    </span><span class=nt>encryption</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span><span class=nt>key</span><span class=p>:</span><span class=w> </span>{{<span class=w> </span><span class=l>upper .ContextEnvironment }}_ENCRYPTION_SECRET</span><span class=w>
+</span><span class=w>      </span><span class=nt>key</span><span class=p>:</span><span class=w> </span>{{<span class=w> </span><span class=l>upper .Environment }}_ENCRYPTION_SECRET</span><span class=w>
 </span><span class=w>    </span><span class=nt>environments</span><span class=p>:</span><span class=w>
 </span><span class=w>      </span><span class=nt>variables</span><span class=p>:</span><span class=w>
 </span><span class=w>        </span><span class=nt>name</span><span class=p>:</span><span class=w>  </span><span class=l>PIPE_{{ upper .Context.Environment.Name }}</span><span class=w>
@@ -514,7 +514,7 @@ Workspace sample file
 </span><span class=w>      </span><span class=nt>paths</span><span class=p>:</span><span class=w>
 </span><span class=w>        </span>- <span class=l>.vscode</span><span class=w>
 </span><span class=w>        </span>- <span class=l>.postman/dev</span><span class=w>
-</span><span class=w>        </span>- {{<span class=w> </span><span class=l>.WorkspaceHome }}/.nitroci/environments/dev</span><span class=w>
+</span><span class=w>        </span>- {{<span class=w> </span><span class=l>.Workspace.Home }}/.nitroci/environments/dev</span><span class=w>
 </span><span class=w></span><span class=nt>commands</span><span class=p>:</span><span class=w>
 </span><span class=w>  </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>provision</span><span class=w>
 </span><span class=w>    </span><span class=nt>description</span><span class=p>:</span><span class=w> </span><span class=l>Provision the environment</span><span class=w>
