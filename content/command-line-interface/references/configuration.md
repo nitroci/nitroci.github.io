@@ -19,8 +19,8 @@ A global configuration file is used to configure the cli at operating system lev
 
 ```Toml
 [nitroci]
-# Path where plugins are stored
-pluginsHome = "$HOME/.nitro/plugins"
+# Global cache path
+cacheHome = "$HOME/.nitro/cache"
 ```
 
 {{< /tab >}}
@@ -29,8 +29,8 @@ pluginsHome = "$HOME/.nitro/plugins"
 ```Yaml
 ---
 nitroci:
-    # Path where plugins are stored
-    pluginsHome: "$HOME/.nitro/plugins"
+    # Global cache path
+    cacheHome: "$HOME/.nitro/cache"
 ```
 
 {{< /tab >}}
@@ -50,4 +50,4 @@ Below the comprehensive list of the environment variables:
 | VARIABLE NAME        | DEFAULT                 | DESCRIPTION                      |
 |----------------------|-------------------------|----------------------------------|
 | NITROCI_CONFIG       | $HOME/.nitro/config.ini | Global config path               |
-| NITROCI_PLUGINS_PATH | $HOME/.nitro/plugins    | Path where plugins are stored    |
+| NITROCI_CACHE_PATH   | $HOME/.nitro/cache      | Global cache path                |
