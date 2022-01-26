@@ -42,7 +42,7 @@ Some of the defaults values can be overriden by the means of the environment var
 
 ```Shell
 # for instance we can override the default global configuration file
-export NITROCI_CONFIG="./nitroci/config.ini" && nitroci configure
+export NITROCI_CONFIG="./nitroci/config.ini" && nitroci configure --show
 ```
 
 Below the comprehensive list of the environment variables:
@@ -50,4 +50,4 @@ Below the comprehensive list of the environment variables:
 | VARIABLE NAME        | DEFAULT                 | DESCRIPTION                      |
 |----------------------|-------------------------|----------------------------------|
 | NITROCI_CONFIG       | $HOME/.nitro/config.ini | Global config path               |
-| NITROCI_CACHE_PATH   | $HOME/.nitro/cache      | Global cache path                |
+| NITROCI_CACHE   | $HOME/.nitro/cache      | Global cache path                |
