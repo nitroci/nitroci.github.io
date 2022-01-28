@@ -69,9 +69,9 @@ workspace:
         slug: my-project
   plugins:
     - name: bitbucket
-      version: 0.0.0
+      version: 0.0.2
     - name: jfrog
-      version: 0.0.0
+      version: 0.0.2
   values:
     - PROJECT_NAME:
         value: my-project
